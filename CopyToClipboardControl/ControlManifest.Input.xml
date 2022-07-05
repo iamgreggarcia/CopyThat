@@ -18,7 +18,29 @@
       -->
     </external-service-usage>
     <!-- property node identifies a specific, configurable piece of data that the control expects from CDS -->
-    <property name="sampleProperty" display-name-key="Property_Display_Key" description-key="Property_Desc_Key" of-type="SingleLine.Text" usage="bound" required="true" />
+    <!-- <property name="sampleProperty" display-name-key="Property_Display_Key" description-key="Property_Desc_Key" of-type="SingleLine.Text" usage="bound" required="true" /> -->
+    <property name="Value" display-name-key="Value_Display_Key" description-key="Value_Desc_Key" of-type="SingleLine.Text" usage="bound" required="false" default-value=""/>
+    <property name="MultiLine" display-name-key="MultiLine_Display_Key" description-key="MultiLine_Desc_Key" of-type="TwoOptions" usage="input" required="true" default-value="false"/>
+    <property name="ReadOnly" display-name-key="ReadOnly_Display_Key" description-key="ReadOnly_Desc_Key" of-type="TwoOptions" usage="input" required="true" default-value="false"/>
+    <property name="MaxLength" display-name-key="MaxLength_Display_Key" description-key="MaxLength_Desc_Key" of-type="Whole.None" usage="input" required="false" default-value="255"/>
+    <property name="Placeholder" display-name-key="Placeholder_Display_Key" description-key="Placeholder_Desc_Key" of-type="SingleLine.Text" usage="input" required="false" default-value=""/>
+    <property name="InputColor" display-name-key="InputColor_Display_Key" description-key="InputColor_Desc_Key" of-type="SingleLine.Text" usage="input" required="false" default-value="RGBA(0,0,0,1)"/>
+    <property name="InputFontSize" display-name-key="InputFontSize_Display_Key" description-key="InputFontSize_Desc_Key" of-type="Whole.None" usage="input" required="false" default-value="13"/>
+    <property name="InputFontWeight" display-name-key="InputFontWeight_Display_Key" description-key="InputFontWeight_Desc_Key" of-type="SingleLine.Text" usage="input" required="false" default-value="Normal"/>
+    <property name="InputFontFamily" display-name-key="InputFontFamily_Display_Key" description-key="InputFontFamily_Desc_Key" of-type="SingleLine.Text" usage="input" required="false" default-value="Open Sans"/>
+    <property name="InputBorderThickness" display-name-key="InputBorderThickness_Display_Key" description-key="InputBorderThickness_Desc_Key" of-type="Whole.None" usage="input" required="false" default-value="2"/>
+    <property name="InputBorderRadius" display-name-key="InputBorderRadius_Display_Key" description-key="InputBorderRadius_Desc_Key" of-type="Whole.None" usage="input" required="false" default-value="5"/>
+    <property name="InputBorderColor" display-name-key="InputBorderColor_Display_Key" description-key="InputBorderColor_Desc_Key" of-type="SingleLine.Text" usage="input" required="false" default-value="RGBA(0,18,107,1)"/>
+    <property name="InputBackgroundColor" display-name-key="InputBackgroundColor_Display_Key" description-key="InputBackgroundColor_Desc_Key" of-type="SingleLine.Text" usage="input" required="false" default-value="RGBA(255,255,255,1)"/>
+    <property name="ButtonColor" display-name-key="ButtonColor_Display_Key" description-key="ButtonColor_Desc_Key" of-type="SingleLine.Text" usage="input" required="false" default-value="RGBA(255,255,255,1)"/>
+    <property name="ButtonFontSize" display-name-key="ButtonFontSize_Display_Key" description-key="ButtonFontSize_Desc_Key" of-type="Whole.None" usage="input" required="false" default-value="15"/>
+    <property name="ButtonFontWeight" display-name-key="ButtonFontWeight_Display_Key" description-key="ButtonFontWeight_Desc_Key" of-type="SingleLine.Text" usage="input" required="false" default-value="Semibold"/>
+    <property name="ButtonFontFamily" display-name-key="ButtonFontFamily_Display_Key" description-key="ButtonFontFamily_Desc_Key" of-type="SingleLine.Text" usage="input" required="false" default-value="Open Sans"/>
+    <property name="ButtonBorderThickness" display-name-key="ButtonBorderThickness_Display_Key" description-key="ButtonBorderThickness_Desc_Key" of-type="Whole.None" usage="input" required="false" default-value="2"/>
+    <property name="ButtonBorderRadius" display-name-key="ButtonBorderRadius_Display_Key" description-key="ButtonBorderRadius_Desc_Key" of-type="Whole.None" usage="input" required="false" default-value="10"/>
+    <property name="ButtonBorderColor" display-name-key="ButtonBorderColor_Display_Key" description-key="ButtonBorderColor_Desc_Key" of-type="SingleLine.Text" usage="input" required="false" default-value="RGBA(56,96,178,1)"/>
+    <property name="ButtonBackgroundColor" display-name-key="ButtonBackgroundColorDisplay_Key" description-key="ButtonBackgroundColor_Desc_Key" of-type="SingleLine.Text" usage="input" required="false" default-value="RGBA(56,96,178,1)"/>
+   
     <!--
       Property node's of-type attribute can be of-type-group attribute.
       Example:
@@ -26,16 +48,16 @@
         <type>Whole.None</type>
         <type>Currency</type>
         <type>FP</type>
-        <type>Decimal</type>
+        <type>Decimal</type>_
       </type-group>
       <property name="sampleProperty" display-name-key="Property_Display_Key" description-key="Property_Desc_Key" of-type-group="numbers" usage="bound" required="true" />
     -->
     <resources>
       <code path="index.ts" order="1"/>
-      <!-- UNCOMMENT TO ADD MORE RESOURCES
+      <!-- UNCOMMENT TO ADD MORE RESOURCES -->
       <css path="css/CopyToClipboardControl.css" order="1" />
       <resx path="strings/CopyToClipboardControl.1033.resx" version="1.0.0" />
-      -->
+     <!i-- -->
     </resources>
     <!-- UNCOMMENT TO ENABLE THE SPECIFIED API
     <feature-usage>

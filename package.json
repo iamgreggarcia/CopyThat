@@ -10,6 +10,7 @@
     "refreshTypes": "pcf-scripts refreshTypes"
   },
   "dependencies": {
+    "clipboard": "^2.0.11"
   },
   "devDependencies": {
     "@types/node": "^16.4",
